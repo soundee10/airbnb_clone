@@ -1,5 +1,5 @@
 {
     "python.linting.flake8Enabled": True,
     "python.linting.enabled": True,
-    "python.formatting.provider": "black"
+    "python.formatting.provider": "black",
 }

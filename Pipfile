@@ -9,6 +9,7 @@ black = "*"
 pillow = "*"
 django-countries = {extras = ["pyuca"], version = "*"}
 install = "*"
+django-seed = "*"
 
 [dev-packages]
 

@@ -1,3 +1,4 @@
+from django.db.models.fields.related import ManyToManyField
 from config.settings import LANGUAGE_CODE
 from django.contrib.auth.models import AbstractUser
 from django.db import models
@@ -29,7 +30,7 @@ class User(AbstractUser):
 
     CURRENCY_CHOICES = ((CURRENCY_USD, "USD"), (CURRENCY_KRW, "KRW"))
 
-    avatar = models.ImageField(null=True, blank=True)
+    avatar = models.ImageField(upload_to="avatars", null=True, blank=True)
     gender = models.CharField(
         choices=GENDER_CHOICES, max_length=10, null=True, blank=True
     )
